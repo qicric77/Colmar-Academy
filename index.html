@@ -7,8 +7,12 @@
   <!-- Header -->
   <header>
     <!--start desktop nav-->
-      <img src="resources/images/ic-logo.svg"
-      <nav class="desktop">
+
+      <nav class="desktopnav">
+        <section id="navleft">
+          <img class="logo" src="resources/images/ic-logo.svg">
+          <p class="brand"> COLMAR ACADEMY </p>
+        </section>
         <ul>
           <li><a href="#">On Campus</a></li>
           <li><a href="#">Online</a></li>
@@ -17,28 +21,28 @@
         </ul>
       </nav>
         <!--end desktop nav-->
-      <!--
+
       <nav class="mobile">
         <ul>
           <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
-          <li><a href="#"><img src="./resources/images/ic-product-detail.svg"></a></li>
-          <li><a href="#"><img src="./resources/images/ic-about-us.svg"></a></li>
-          <li><a href="#" class="button">Join us</a></li>
+          <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
         </ul>
       </nav>
     </div>
-      -->
+
   </header>
   <!-- start banner section-->
   <!--main banner div grey background start-->
   <div id="banner">
-    <img class="desk" src="resources/images/banner.jpg">
+    <img class="deskbig" src="resources/images/banner.jpg">
     <!-- start article section-->
     <article id="bannertext">
-      <h1> Learn Somthing New Everyday </h1>
-      <p id="banner para">
+      <h1> Learn Somthing <br> New Everyday </h1>
+      <p id="banner_para">
         Lorem ipsum dolar sit amet, <br>
-        consectetur adispiscing elit.
+        consectetur adispiscing elit.<br>
       </p>
       <button id="start">
         Start Here
@@ -50,14 +54,16 @@
 
     <!-- Section 2 start-->
     <div id="sectiontwo">
+
       <!-- leftimage and text under it start-->
       <div class="Leftimage">
-        <img class="desk" src="resources/images/information-main.jpg">
+        <img id="deskbig2" src="resources/images/information-main.jpg">
         <article id="infoarticle">
           <h1> It doesn't hurt to keep practicing </h1>
-          <p> Lorem ipsum Lorem inpusum more lorem inpusme etc.<br>
-            Lorem ipsum Lorem inpusum more lorem inpusme etc.<br>
-            Lorem ipsum Lorem inpusum more lorem inpusme etc.<br>
+          <p>
+            Lorem ipsum Lorem inpusum more lorem inpusme etc.
+            Lorem ipsum Lorem inpusum more lorem inpusme etc.
+            Lorem ipsum Lorem inpusum more lorem inpusme etc.
           </p>
           <p id="author">
             Emanuel Sr, Strategist at Hire.com
@@ -68,32 +74,36 @@
         <!-- start of single column of 3 rows-->
           <div class="column">
             <!--block 1 start-->
-            <div class="section_two_block">
-              <img class="desk" src="resources/images/information-orientation.jpg">
+            <div class="section_two_block" id="firstblocksec2">
+              <img class="desk sec2block"  src="resources/images/information-orientation.jpg">
+              <img class="mobileonly"  src="resources\images\information-orientation-mobile.jpg">
               <aside class=text_block_sec_2>
                 <h2> Orientation date </h2>
-                <p>Tue 10/11 & Wed 10/12: 8am-3pm
+                <p>Tue 10/11 & Wed 10/12: 8am-3pm <br><br>
                   <a href="#">Read More</a>
                 </p>
               </aside>
               </div>
                 <!--block 2 start-->
                 <div class="section_two_block">
-                  <img class="desk" src="resources/images/information-campus.jpg">
+                  <img class="desk sec2block" src="resources/images/information-campus.jpg">
+                  <img class="mobileonly"  src="resources/images/information-campus-mobile.jpg">
                   <aside class="text_block_sec_2">
                     <h2> Our Campus </h2>
-                    <p>Find which campus is close by you
+                    <p>Find which campus is close by you <br><br>
                       <a href="#">Read More</a>
                     </p>
                   </aside>
                 </div>
                     <!--block 3 start-->
-                <div class="section_two_block">
-                  <img class="desk" src="resources/images/information-guest-lecture.jpg">
+                <div class="section_two_block" id="thirdblocksec2">
+                  <img class="desk sec2block" src="resources/images/information-guest-lecture.jpg">
+                  <img class="mobileonly"  src="resources/images/information-guest-lecture-mobile.jpg">
                   <aside class="text_block_sec_2">
                     <h2> Our Guest Lecture</h2>
                     <p>Join a keynote with Oliver Sack
                       <br>  about music in medical treatement
+                      <br> <br>
                       <a href="#">Read More</a>
                     </p>
                   </aside>
@@ -102,13 +112,13 @@
           </div>
               <!--end single column of 3 rows-->
               <!--start section3-->
-        <section id="three">
-          <h1> Start learning </h1>
-
+          <section id="section3">
+            <h1> Start learning </h1>
+            <section class="rows">
             <!--start block 1 section 3-->
             <div class="section_three_block">
-              <img class="desk" src="resources/images/course-software.jpg">
-              <aside class=text_block_sec_3>
+              <img class="desk sec3block" src="resources/images/course-software.jpg">
+              <aside class="text_block_sec_3">
                 <h2> Software Engineering</h2>
                 <h3> Courses </h3>
                 <p> Data Science, Big Data, SQL, Data Visualisation
@@ -118,7 +128,7 @@
             <!--start block 2 section 3-->
             <div class="section_three_block">
               <img class="desk" src="resources/images/course-computer-art.jpg">
-              <aside class=text_block_sec_3>
+              <aside class="text_block_sec_3">
                 <h2> Computer Art</h2>
                 <h3> Courses </h3>
                 <p> Imaging & Design, Web Design, Motion graphics & Visual Effects, Computer Animation
@@ -128,17 +138,20 @@
             <!--start block 3 section 3-->
             <div class="section_three_block">
               <img class="desk" src="resources/images/course-design.jpg">
-              <aside class=text_block_sec_3>
+              <aside class="text_block_sec_3">
                 <h2>Design</h2>
                 <h3> Courses </h3>
                 <p> User Experience Design, User Research, Visual design
                 </p>
               </aside>
             </div>
+            </section>
+            <!--start of second row-->
+            <section class="rows">
             <!--start block 4 section 3-->
             <div class="section_three_block">
               <img class="desk" src="resources/images/course-data.jpg">
-              <aside class=text_block_sec_3>
+              <aside class="text_block_sec_3">
                 <h2> Data</h2>
                 <h3> Courses </h3>
                 <p> Data Science, Big Data, SQL, Data Visualisation
@@ -148,40 +161,45 @@
             <!--start block 5 section 3-->
             <div class="section_three_block">
               <img class="desk" src="resources/images/course-business.jpg">
-              <aside class=text_block_sec_3>
+              <aside class="text_block_sec_3">
                 <h2> Business </h2>
                 <h3> Courses </h3>
                 <p> Product Development, Business Development, Startup
                 </p>
               </aside>
+            </div>
               <!--start block 6 section 3-->
               <div class="section_three_block">
                 <img class="desk" src="resources/images/course-marketing.jpg">
-                <aside class=text_block_sec_3>
+                <aside class="text_block_sec_3">
                   <h2>Marketing</h2>
                   <h3> Courses </h3>
                   <p> Analytics, Content Marketing, Mobile Marketing
                   </p>
                 </aside>
               </div>
-            </div>
+          </section>
         </section>
               <!--end section 3-->
 
               <!--start section 4-->
+              <h1 class="sec4header"> Thesis Exhibit </h1>
               <div id="section_four">
-                <h1> Thesis Exhibit </h1>
+
                 <!-- left video and text under it start-->
                 <div class="Left_vid">
                   <article id="sec_four_main">
-                    <video width="320" height="240" controls> <source src="resoureces/video/thesis.mp4" type="video/mp4">
+                    <video width="100%" height="100%" controls>
+                      <source src="resources/video/thesis.mp4" type="video/mp4">
+                        <!--
                         <source src="movie.ogg" type="video/ogg">
                           Your browser does not support the video tag.
+                        -->
                     </video>
-                    <h2> Reimagine Urban </h2>
-                    <p> Lorem ipsum Lorem inpusum more lorem inpusme etc.<br>
-                      Lorem ipsum Lorem inpusum more lorem inpusme etc.<br>
-                      Lorem ipsum Lorem inpusum more lorem inpusme etc.<br>
+                    <h2 class="hideformobile"> Reimagine Urban </h2>
+                    <p class="hideformobile"> Lorem ipsum Lorem inpusum more lorem inpusme etc.
+                      Lorem ipsum Lorem inpusum more lorem inpusme etc.
+                      Lorem ipsum Lorem inpusum more lorem inpusme etc.
                     </p>
                   </article>
                 </div>
@@ -190,8 +208,8 @@
                     <div class="column">
                       <!--block 1 start-->
                       <div class="section_four_block">
-                        <img class="desk" src="resources/images/thesis-fisma.jpg">
-                        <aside class=text_block_sec_2>
+                        <img class="desk four" src="resources/images/thesis-fisma.jpg">
+                        <aside class="text_block_sec_4">
                           <h2> Fisma Design and Prototype</h2>
                           <p> Designer Showcase of new prototype product
                           </p>
@@ -199,8 +217,8 @@
                         </div>
                           <!--block 2 start-->
                           <div class="section_four_block">
-                            <img class="desk" src="resources/images/thesis-now-and-then.jpg">
-                            <aside class="text_block_sec_2">
+                            <img class="desk four" src="resources/images/thesis-now-and-then.jpg">
+                            <aside class="text_block_sec_4">
                               <h2> Now and then </h2>
                               <p>Research study about New York
                               </p>
@@ -211,13 +229,13 @@
 
     <!-- Footer -->
     <footer>
-      <div class="content">
+
         <span class="copyright">© 2016 Colmar Academy, All Rights Reserved</span>
         <span class="terms">
-          <p>Terms</p>
-          <p> Privacy </p>
+          <p>Terms Privacy </p>
+
         </span>
-      </div>
+
     </footer>
 </body>
 </html>
